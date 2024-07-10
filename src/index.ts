@@ -1,6 +1,5 @@
 import * as core from '@actions/core';
 import { getActionOptions, generateSchemeRegexp, getCurrentVersion } from './utils';
-import collectStats from "gh-action-stats";
 
 async function main() {
   try {
@@ -17,4 +16,4 @@ async function main() {
   }
 }
 
-collectStats(main);
+main()

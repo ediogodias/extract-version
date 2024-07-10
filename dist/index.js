@@ -27,13 +27,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(require("@actions/core"));
 const utils_1 = require("./utils");
-const gh_action_stats_1 = __importDefault(require("gh-action-stats"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -51,4 +47,4 @@ function main() {
         }
     });
 }
-gh_action_stats_1.default(main);
+main();
